@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques2</title>
+    <style>
+        form{
+            border: 3px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id="name" type="text" placeholder=" Enter your name">
+        <input id="number" type="number" placeholder="Enter your number">
+        <input id="city" type="text" placeholder="Enter your city">
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+</html>
+
+<script>
+    
+    
+    function Construct_fun(name, number, city){
+        
+        this.name = name;
+        this.number = number;
+        this.city = city;
+    }
+    
+    var array = [];
+
+document.querySelector("form").addEventListener('submit', (event) => {
+
+    event.preventDefault();
+
+    var student_detail = new Construct_fun(
+        document.querySelector("#name").value,
+        document.querySelector("#number").value,
+        document.querySelector("#city").value
+    );
+    // pehle leya stprage se dekhne k leye
+    // array = JSON.parse(localStorage.getItem('details'));
+
+    array.push(student_detail);
+
+    localStorage.setItem("details", JSON.stringify(array));
+
+    console.log(array);
+
+    window.location.href="/ques3/index.html"
+
+});
+
+
+
+</script>

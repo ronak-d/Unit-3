@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques1</title>
+</head>
+<body>
+    console in the browser or open in VS to See the Results.
+</body>
+</html>
+<script>
+    // calling others skill to impress others.
+
+let Amar = {
+    live: "goa",
+    skill: 'singer',
+    AmarS(input){
+        console.log(`Amar has a skill of ${this.skill} `)
+    },
+}
+
+let Akbar = {
+    live: "Mumbai",
+    skill: 'chef',
+    AkbarS(input){
+        console.log(`Akbar has a skill of ${this.skill} `)
+    },
+}
+
+let Anthony = {
+    live: 'Kashmir',
+    skill: 'Magician',
+    AkhbarS(){
+        console.log(`Anthony has a skill of ${this.skill}`)
+    },
+}
+
+Anthony.AkhbarS.call(Amar)
+Amar.AmarS.call(Anthony)
+Anthony.AkhbarS.call(Amar)
+
+
+
+
+
+
+
+</script>

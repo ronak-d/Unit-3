@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques3</title>
+    <style>
+        #maindiv{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="show_detail">
+
+    </div>
+</body>
+</html>
+
+<script>
+
+    var storage = JSON.parse(localStorage.getItem('details'));
+    console.log(storage);
+    
+    let div = document.createElement('div');
+    div.setAttribute('id', 'maindiv')
+ 
+    storage.forEach(item => {
+        let user = document.createElement('p');
+        user.innerHTML = ` Student name is - ${item.name}`;
+    
+        let user_num = document.createElement('p');
+        user_num.innerHTML = `Students Phone No. is - ${item.number}`;
+    
+        let user_city = document.createElement('p');
+        user_city.innerHTML = `Student belongs to - ${item.city}`;
+        div.append(user,user_num,user_city);
+    })
+
+
+    document.getElementById('show_detail').append(div);
+
+
+
+
+</script>
