@@ -1,0 +1,76 @@
+#navbar{
+    display: flex;
+    /* border: 2px solid red; */
+    border-radius: 7px;
+    margin: 5px;
+    font-family: 'Josefin Sans', sans-serif;     
+    /* box-shadow: 0 8px 8px -4px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#webimg{
+    width: 30%;
+    /* border: 3px solid black; */
+}
+#imgnav{
+    /* image width of nav bar */
+    width: 28%;
+    height: 100%;
+}
+
+#header_elements{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+li:hover{
+    transform: scale(1.2);
+    transition: transform .2s;
+    /* font-size: large; */
+    color: brown;
+}
+
+#Search_bar{
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: 2px solid black;
+}
+
+#Search_button{
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#search_items{
+    /* border: 3px solid black; */
+    padding-left: 170px;
+    padding-top: 14px;
+}
+
+/* loginparts */
+#email, #password, #submit{
+    display: block;
+    margin: 7px auto;
+    border-radius: 4px;
+    padding: 5px 5px;
+    border: 2px solid rgb(7, 3, 3);
+}
+
+#login_form{    
+    border: 2px solid black;
+    width: 190px;
+    margin: auto;
+}
+
+#login-form-div{
+    margin-top:100px;
+    width: 100%;
+    height:auto;
+    /* border: 2px solid black; */
+}
